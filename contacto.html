@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Este es la pagina para registrarse y recibir las promociones">
+    <meta name="keywords" content="desarrollo, web, descanso, alojamiento, comodidad, newsletter, promocion">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title> Hotel Spa&Resort | Contacto </title>
+</head>
+
+<body class="contacto">
+    <header class="header">
+        <div class="header-banner">
+            <div class="header-banner__imagen">
+                <img src="img/logo.jpg" alt="logoHotel">
+            </div>
+            <h1 class="header-banner__titulo">
+                Hotel Spa&Resort
+            </h1>
+        </div>
+        <hr>
+        <nav class="header-nav">
+            <ul class="header-nav__menu">
+                <li class="header-nav__item"><a class="header-nav__link" href="Index.html">Inicio</a></li>
+                <li class="header-nav__item"><a class="header-nav__link" href="contacto.html">Contacto</a></li>
+                <li class="header-nav__item"><a class="header-nav__link" href="Galeria">Galeria</a>
+                    <ul class="header-nav__menuDos">
+                        <li class="header-nav__itemDos"><a class="header-nav__linkDos" href="habitaciones.html">Habitaciones</a></li>
+                        <li class="header-nav__itemDos"><a class="header-nav__linkDos" href="piscina.html">Piscina</a></li>
+                        <li class="header-nav__itemDos"><a class="header-nav__linkDos" href="spa.html">Spa</a></li>
+                        <li class="header-nav__itemDos"><a class="header-nav__linkDos" href="comidas.html">Comidas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main class="contacto">
+        <form class="row g-3" action="Registro.html" method="GET">
+            <div>
+                <h2>
+                        Complete el formulario para recibir nuestras promociones
+                </h2>
+            </div>
+                <hr>
+            <div class="col-md-4">
+                <label class="form-label" for="nombre">Nombre:</label>
+                <input class="form-control" type="text" name="nombre" placeholder="Sabina">
+                <br>
+                <label class="form-label" for="apellido">Apellido:</label>
+                <input class="form-control" type="text" name="apellido" placeholder="Etcheverry">
+                <br>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-control" type="email" name="email" placeholder="tucorreo@gmail.com">
+                <br>
+                <label for="contraseña">Tu contraseña:</label>
+                <input class="form-control" type="text" name="contraseña" placeholder="contraseña">
+                <br>
+            </div>
+            <div class="col-md-4">
+                <textarea class="cuadroDeConsulta" name="Consulta" placeholder="Escribe aquí tu consulta"></textarea>
+                <label class="form-label" for="Newsletter">Recibir notificaciones del newsletter:</label>
+                <input class="form-check-input" type="checkbox" name="Newsletter">
+            </div>
+            <div class="col-12">
+                <input class="btn btn-secondary boton" type="submit" value="Enviar">
+                <input class="btn btn-secondary boton" type="submit" value="Restablecer">
+            </div>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <nav class="navRedes">
+            <ul class="redesUno">
+                <li class="redes-red margen-2"><a
+                        href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Email</a>
+                </li>
+                <li class="redes-pink margen-2"><a href="https://www.instagram.com/">Instagram</a></li>
+                <li class="redes-green margen-2"><a href="https://www.whatsapp.com/">Whatsapp</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>

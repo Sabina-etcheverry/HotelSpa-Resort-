@@ -1,0 +1,266 @@
+footer {
+  display: grid;
+}
+
+.navRedes {
+  display: grid;
+  justify-content: center;
+  list-style: none;
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.redesUno li {
+  text-align: justify;
+  position: relative;
+  display: inline-block;
+}
+
+.redesUno li a {
+  display: block;
+  padding: 15px 20px;
+  color: sienna;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.redesUno li a:hover {
+  color: black;
+}
+
+.header-banner {
+  width: 50%;
+}
+.header-banner img {
+  display: flex;
+  padding: 15px;
+  align-content: center;
+  flex-wrap: wrap;
+  max-width: 230px;
+  position: absolute;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.header-titulo {
+  color: black;
+  width: 50%;
+  height: 100px;
+  border: black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: end;
+  padding: 100px;
+  transition: all 1s;
+}
+
+.header-titulo:hover {
+  transform: scale(1, 2);
+}
+
+.header-nav {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  margin: 0px auto;
+}
+.header-nav__item {
+  display: inline-block;
+  position: relative;
+  width: 175px;
+}
+.header-nav__itemDos {
+  list-style: none;
+}
+.header-nav__link {
+  display: block;
+  padding: 15px 20px;
+  color: sienna;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+.header-nav__link:hover {
+  color: black;
+}
+.header-nav__menuDos {
+  position: absolute;
+  z-index: 2;
+  background: sienna;
+  width: 10rem;
+  display: none;
+}
+.header-nav__linkDos {
+  display: block;
+  padding: 15px;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: none;
+}
+.header-nav__linkDos:hover {
+  color: black;
+}
+
+.header-nav__menu li:hover .header-nav__menuDos {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    /*Modificando HEADER*/
+  }
+  body .header-banner img {
+    padding: 15px;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: block;
+    width: 50%;
+  }
+  body .header-titulo {
+    color: black;
+    width: 100%;
+    height: 100px;
+    border: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 100px;
+  }
+  body .header-nav {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin: 0px auto;
+  }
+  body .header-nav__item {
+    display: inline-block;
+    position: relative;
+  }
+  body .header-nav__itemDos {
+    list-style: none;
+  }
+  body .header-nav__link {
+    display: block;
+    padding: 15px 20px;
+    color: sienna;
+    font-family: sans-serif;
+    text-decoration: none;
+  }
+  body .header-nav__link:hover {
+    color: black;
+  }
+  body .header-nav__menuDos {
+    position: absolute;
+    z-index: 2;
+    background: sienna;
+    width: 10rem;
+    display: none;
+  }
+  body .header-nav__linkDos {
+    display: block;
+    padding: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-decoration: none;
+  }
+  body .header-nav__linkDos:hover {
+    color: black;
+  }
+  body .header-nav__menu li:hover .header-nav__menuDos {
+    display: block;
+  }
+  body .header-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+  }
+  body .header-nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.margen-1 {
+  margin: 10px;
+}
+
+.margen-2 {
+  margin: 20px;
+}
+
+.margen-3 {
+  margin: 30px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "texto1 imagen" "imagenDos texto2";
+}
+
+#texto1 {
+  grid-area: texto1;
+}
+
+#texto2 {
+  grid-area: texto2;
+}
+
+.contenedorHeader {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+}
+
+img {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  padding: 5px;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+.column img {
+  margin-top: 5px;
+}
+
+.cuadroDeConsulta {
+  width: 60%;
+  height: 70%;
+  border: 2px solid;
+}
+
+.boton {
+  width: 10%;
+  justify-content: center;
+}
+
+.contacto {
+  height: 70vh;
+}
+
+.altoImagen {
+  height: 950px;
+}
+
+/*# sourceMappingURL=index.css.map */

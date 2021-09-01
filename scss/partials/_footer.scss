@@ -1,0 +1,28 @@
+footer {
+    display: grid;
+}
+
+.navRedes {
+    display: grid;
+    justify-content: center;
+    list-style: none;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.redesUno li {
+    text-align: justify;
+    position: relative;
+    display: inline-block;
+}
+
+.redesUno li a {
+    display: block;
+    padding: 15px 20px;
+    color: sienna;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.redesUno li a:hover {
+    color: black;
+}

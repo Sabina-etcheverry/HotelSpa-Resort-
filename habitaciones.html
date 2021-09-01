@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Este es la pagina donde observamos imagenes de habitaciones">
+    <meta name="keywords" content="desarrollo, web, descanso, alojamiento, comodidad, habitaciones">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <title> Hotel Spa&Resort | Habitaciones </title>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-banner">
+        <div class="header-banner__imagen">
+            <img src="img/logo.jpg" alt="logoHotel">
+        </div>
+        <h1 class="header-banner__titulo">
+            Hotel Spa&Resort
+        </h1>
+    </div>
+    <hr>
+    <nav class="header-nav">
+        <ul class="header-nav__menu">
+            <li class="header-nav__item"><a class="header-nav__link" href="Index.html">Inicio</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="contacto.html">Contacto</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="Galeria">Galeria</a>
+                <ul class="header-nav__menuDos">
+                    <li class="header-nav__itemDos"><a class="header-nav__linkDos" href="habitaciones.html">Habitaciones</a></li>
+                    <li class="header-nav__itemDos"><a class="header-nav__linkDos" href="piscina.html">Piscina</a></li>
+                    <li class="header-nav__itemDos"><a class="header-nav__linkDos" href="spa.html">Spa</a></li>
+                    <li class="header-nav__itemDos"><a class="header-nav__linkDos" href="comidas.html">Comidas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+    <hr>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active altoImagen">
+            <img src="img/habitacionHotel.jpg" class="d-block w-100 h-100" alt="habitacionDeHotel">
+          </div>
+          <div class="carousel-item altoImagen">
+            <img src="img/habitacionHotel2.jpg" class="d-block w-100 h-100" alt="habitacionDeHotel">
+          </div>
+          <div class="carousel-item altoImagen">
+            <img src="img/habitacionHotel3.jpg" class="d-block w-100 h-100" alt="habitacionDeHotel">
+          </div>
+          <div class="carousel-item altoImagen">
+            <img src="img/habitacionHotel4.jpg" class="d-block w-100 h-100" alt="habitacionDeHotel">
+          </div>
+          <div class="carousel-item altoImagen">
+            <img src="img/habitacionHotelCinco.jpg" class="d-block w-100 h-100" alt="habitacionDeHotel">
+          </div>
+          <div class="carousel-item altoImagen">
+            <img src="img/habitacionHotel6.jpg" class="d-block w-100 h-100" alt="habitacionDeHotel">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <hr>
+    <footer>
+      <nav class="navRedes">
+          <ul class="redesUno">
+              <li class="redes-red margen-2"><a
+                      href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Email</a>
+              </li>
+              <li class="redes-pink margen-2"><a href="https://www.instagram.com/">Instagram</a></li>
+              <li class="redes-green margen-2"><a href="https://www.whatsapp.com/">Whatsapp</a></li>
+          </ul>
+      </nav>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+
+</html>

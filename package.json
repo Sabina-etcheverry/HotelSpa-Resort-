@@ -1,0 +1,17 @@
+{
+  "name": "clase_11_sabina_desafio_obligatorio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
+    "build-sass": "sass scss/index.scss style/index.css"
+  },
+  "author": "",
+  "license": "ISC",
+
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
