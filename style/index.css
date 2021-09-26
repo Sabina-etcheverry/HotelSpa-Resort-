@@ -1,196 +1,255 @@
-footer {
-  display: grid;
-}
-
-.navRedes {
-  display: grid;
+.contenedorRedes {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  list-style: none;
-  width: 1000px;
-  margin: 0px auto;
+  align-content: center;
+  margin: 0 auto;
 }
-
-.redesUno li {
+.contenedorRedes .redesUno {
+  gap: 10rem;
+}
+.contenedorRedes .redesUno li {
   text-align: justify;
   position: relative;
   display: inline-block;
 }
-
-.redesUno li a {
+.contenedorRedes .redesUno li a {
   display: block;
   padding: 15px 20px;
-  color: sienna;
-  font-family: sans-serif;
   text-decoration: none;
 }
-
-.redesUno li a:hover {
-  color: black;
+.contenedorRedes .redesUno__logoGmail {
+  max-width: 400px;
+  height: 50px;
 }
-
-.header-banner {
-  width: 50%;
-}
-.header-banner img {
-  display: flex;
-  padding: 15px;
-  align-content: center;
-  flex-wrap: wrap;
-  max-width: 230px;
-  position: absolute;
+.contenedorRedes .redesUno__logoInstagram {
   max-width: 200px;
-  max-height: 200px;
+  height: 50px;
+}
+.contenedorRedes .redesUno__logoWhatsapp {
+  max-width: 200px;
+  height: 50px;
 }
 
-.header-titulo {
-  color: black;
-  width: 50%;
-  height: 100px;
-  border: black;
-  display: grid;
+nav {
+  margin-bottom: 100px;
+}
+nav .divUno {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+nav .divUno img {
+  max-width: 250px;
+  margin: 10px 50px;
+}
+nav .divUno .titulo {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  justify-items: end;
-  padding: 100px;
+  padding-left: 230px;
+  font-size: 214%;
   transition: all 1s;
 }
-
-.header-titulo:hover {
+nav .divUno .titulo:hover {
   transform: scale(1, 2);
 }
-
-.header-nav {
-  display: grid;
+nav .divDos {
+  display: flex;
   justify-content: center;
   width: 100%;
   margin: 0px auto;
 }
-.header-nav__item {
+nav .divDos .menuUno {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+nav .divDos .menuUno__itemUno {
   display: inline-block;
   position: relative;
   width: 175px;
-}
-.header-nav__itemDos {
   list-style: none;
+  font-size: 20px;
 }
-.header-nav__link {
+nav .divDos .menuUno__link {
   display: block;
   padding: 15px 20px;
   color: sienna;
   font-family: sans-serif;
   text-decoration: none;
 }
-.header-nav__link:hover {
+nav .divDos .menuUno__link:hover {
   color: black;
 }
-.header-nav__menuDos {
+nav .menuDos {
   position: absolute;
   z-index: 2;
   background: sienna;
   width: 10rem;
   display: none;
 }
-.header-nav__linkDos {
+nav .menuDos__itemDos {
+  list-style: none;
+}
+nav .menuDos__linkDos {
   display: block;
   padding: 15px;
   color: white;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-decoration: none;
 }
-.header-nav__linkDos:hover {
+nav .menuDos__linkDos__linkDos:hover {
   color: black;
 }
 
-.header-nav__menu li:hover .header-nav__menuDos {
+.menuUno li:hover .menuDos {
   display: block;
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    /*Modificando HEADER*/
-  }
-  body .header-banner img {
-    padding: 15px;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    display: block;
-    width: 50%;
-  }
-  body .header-titulo {
-    color: black;
-    width: 100%;
-    height: 100px;
-    border: black;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding: 100px;
-  }
-  body .header-nav {
-    display: grid;
-    justify-content: center;
-    width: 100%;
-    margin: 0px auto;
-  }
-  body .header-nav__item {
-    display: inline-block;
-    position: relative;
-  }
-  body .header-nav__itemDos {
-    list-style: none;
-  }
-  body .header-nav__link {
-    display: block;
-    padding: 15px 20px;
-    color: sienna;
-    font-family: sans-serif;
-    text-decoration: none;
-  }
-  body .header-nav__link:hover {
-    color: black;
-  }
-  body .header-nav__menuDos {
-    position: absolute;
-    z-index: 2;
-    background: sienna;
-    width: 10rem;
-    display: none;
-  }
-  body .header-nav__linkDos {
-    display: block;
-    padding: 15px;
-    color: white;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    text-decoration: none;
-  }
-  body .header-nav__linkDos:hover {
-    color: black;
-  }
-  body .header-nav__menu li:hover .header-nav__menuDos {
-    display: block;
-  }
-  body .header-banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    align-items: center;
-    align-content: center;
-  }
-  body .header-nav {
+  nav .divUno {
     display: flex;
     flex-direction: row;
   }
+  nav .divUno .titulo {
+    display: none;
+  }
+  nav .divUno img {
+    max-width: 70%;
+  }
+  nav .divDos {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+  nav .menuUno {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: left;
+    align-content: flex-end;
+  }
+
+  main .contenedorUno {
+    display: flex;
+    flex-direction: column;
+  }
+  main .contenedorUno #texto1 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 200%;
+    max-width: 200%;
+    padding: 5px;
+    font-size: 150%;
+    margin: 10px;
+  }
+  main .contenedorUno #imagenHotel {
+    width: 100%;
+  }
+  main .contenedorDos {
+    display: flex;
+    flex-direction: column;
+  }
+  main .contenedorDos #imagenHotelDos {
+    width: 100%;
+    margin: 0;
+  }
+  main .contenedorDos #texto2 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 200%;
+    max-width: 200%;
+    padding: 5px;
+    font-size: 150%;
+    margin: 10px;
+  }
+
+  .carousel-item {
+    max-width: 100%;
+    height: 50%;
+  }
+
+  .contacto {
+    margin-right: 20%;
+  }
 }
 @media screen and (max-width: 320px) {
-  body {
-    display: grid;
-    grid-template-columns: 1fr;
+  nav .divUno {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .divUno .titulo {
+    display: none;
+  }
+  nav .divDos {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .menuUno {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .contenedorUno {
+    display: flex;
+    flex-direction: column;
+  }
+  main .contenedorUno #texto1 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 150%;
+    max-width: 150%;
+    padding: 5px;
+    font-size: 90%;
+    margin: 10px;
+  }
+  main .contenedorUno #imagenHotel {
+    width: 100%;
+  }
+  main .contenedorDos {
+    display: flex;
+    flex-direction: column;
+  }
+  main .contenedorDos #imagenHotelDos {
+    width: 100%;
+  }
+  main .contenedorDos #texto2 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 150%;
+    max-width: 150%;
+    padding: 5px;
+    font-size: 90%;
+    margin: 10px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+  }
+
+  .redesUno {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+
+  .logoGmail {
+    max-width: 200px;
+    height: 40px;
+  }
+
+  .logoInstagram {
+    max-width: 20%;
+    height: 10%;
+  }
+
+  .logoWhatsapp {
+    max-width: 20%;
+    height: 10%;
   }
 }
 .margen-1 {

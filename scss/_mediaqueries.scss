@@ -1,106 +1,152 @@
-@media screen and (max-width:600px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        
-        /*Modificando HEADER*/
 
-        .header-banner {
-            img {
-                padding: 19px - 4px;
-                align-content: center;
-                justify-content: center;
-                flex-wrap: wrap;
-                display: block;
-                width: 50%;
-            }
-            
-        }
-        .header-titulo {
-            color: black;
-            width: 100%;
-            height: 100px;
-            border: black;
+@media screen and (max-width:600px) {
+    nav {
+        .divUno {
             display: flex;
-            align-content: center;
-            justify-content: center;
-            padding: 100px;
-        }
-        
-        
-        .header-nav {
-            display: grid;
-            justify-content: center;
-            width: 100%;
-            margin: 0px auto;
-        
-            &__item {
-                display: inline-block;
-                position: relative;
-                }  
-        
-            &__itemDos {
-                list-style: none;
+            flex-direction: row;
+            .titulo {
+                display: none; 
             }
-        
-            &__link {
-                display: block;
-                padding: 15px 20px;
-                color: sienna;
-                font-family: sans-serif;
-                text-decoration: none;
-                }
-            &__link:hover {
-                color: black;
-                }
-            &__menuDos { 
-                position: absolute;
-                z-index: 2;
-                background: sienna;
-                width: 10rem;
-                display: none;
-                }
-                
-            &__linkDos {
-                display: block;
-                padding: 15px;
-                color: white;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                text-decoration: none;
-        
-                &:hover {
-                    color: black;
-                }
-        
-                }
+            img {
+                max-width: 70%;
             }
-        
-        
-        .header-nav__menu li:hover .header-nav__menuDos {
-            display: block;
         }
-    .header-banner {
+         .divDos {
+            display: flex;
+            flex-direction: row;
+            max-width: 100%;
+        }
+         .menuUno {
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            justify-content: left;
+            align-content: flex-end;
+        }
+    } 
+    main {
+        .contenedorUno {
+            display: flex;
+            flex-direction: column;
+            #texto1 {
+                display: flex;
+                flex-direction: column;
+                font-weight: 200%;
+                max-width: 200%;
+                padding: 5px;
+                font-size: 150%;
+                margin: 10px;
+            }
+            #imagenHotel {
+                width: 100%;
+            }
+        }
+        .contenedorDos {
+            display: flex;
+            flex-direction: column;
+            #imagenHotelDos {
+                width: 100%;
+                margin: 0;
+            }
+            #texto2 {
+                display: flex;
+                flex-direction: column;
+                font-weight: 200%;
+                max-width: 200%;
+                padding: 5px;
+                font-size: 150%;
+                margin: 10px; 
+            }
+        }
+    }
+    .carousel-item {
+        max-width: 100%;
+        height: 50%; 
+    }
+    .contacto {
+        margin-right: 20%;
+    }
+}
+    
+    
+    
+@media screen and (max-width:320px) {
+    nav {
+        .divUno {
+            display: flex;
+            flex-direction: column;
+            .titulo {
+                display: none 
+            }
+        }
+        .divDos {
+            display: flex;
+            flex-direction: column;
+        }
+        .menuUno {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    main {
+        .contenedorUno {
+            display: flex;
+            flex-direction: column;
+            #texto1 {
+                display: flex;
+                flex-direction: column;
+                font-weight: 150%;
+                max-width: 150%;
+                padding: 5px;
+                font-size: 90%;
+                margin: 10px;
+            }
+            #imagenHotel {
+                width: 100%;
+            }
+        }
+        .contenedorDos {
+            display: flex;
+            flex-direction: column;
+            #imagenHotelDos {
+                width: 100%;
+            }
+            #texto2 {
+                display: flex;
+                flex-direction: column;
+                font-weight: 150%;
+                max-width: 150%;
+                padding: 5px;
+                font-size: 90%;
+                margin: 10px; 
+            }
+        }
+    }
+    footer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-        justify-self: center;
-        align-items: center;
-        align-content: center;
+        margin-left: 75px;
     }
-    .header-nav {
+    .redesUno {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2em;
     }
-}
-
-}
-
-@media screen and (max-width:320px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr;
+    
+    .logoGmail {
+        max-width: 200px;
+        height: 40px;
     }
-}
-
+    
+    .logoInstagram {
+        max-width: 20%;
+        height: 10%;
+    }
+    
+    .logoWhatsapp {
+        max-width: 20%;
+        height: 10%;
+    }
+} 
+    

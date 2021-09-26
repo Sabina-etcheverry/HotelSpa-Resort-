@@ -1,84 +1,80 @@
-.header-banner {
-    width: 50%;
-    img {
-        display: flex;
-        padding: 19px - 4px;
-        align-content: center;
-        flex-wrap: wrap;
-        max-width: 250px - 20px;
-        position: absolute;
-        max-width: 173px + 27px;
-        max-height: 200px;
-    }
+nav {
+    margin-bottom: 100px;
     
-}
-
-.header-titulo {
-    color: black;
-    width: 50%;
-    height: 100px;
-    border: black;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    justify-items: end;
-    padding: 100px;
-    transition: all 1s
-}
-
-.header-titulo:hover {
-transform: scale(1, 2);
-}
-
-.header-nav {
-    display: grid;
-    justify-content: center;
-    width: 100%;
-    margin: 0px auto;
-
-    &__item {
-        display: inline-block;
-        position: relative;
-        width: 175px;
-        }  
-
-    &__itemDos {
-        list-style: none;
+    .divUno {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 50px;
+        
+        img {
+            max-width: 250px;
+            margin: 10px 50px;
+        }
+    
+        .titulo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 230px;
+            font-size: 214%;
+            transition: all 1s;
+        }
+        
+        .titulo:hover {
+            transform: scale(1, 2);
+            }
+        
     }
-
-    &__link {
-        display: block;
-        padding: 15px 20px;
-        color: sienna;
-        font-family: sans-serif;
-        text-decoration: none;
+    .divDos {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0px auto;
+        .menuUno {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+        &__itemUno {
+            display: inline-block;
+            position: relative;
+            width: 175px;
+            list-style: none;
+            font-size: 20px;
         }
-    &__link:hover {
-        color: black;
+        &__link {
+            display: block;
+            padding: 15px 20px;
+            color: sienna;
+            font-family: sans-serif;
+            text-decoration: none;
         }
-    &__menuDos { 
+        &__link:hover {
+            color: black;
+        }
+        }
+    }
+    .menuDos {
         position: absolute;
         z-index: 2;
         background: sienna;
         width: 10rem;
         display: none;
+        &__itemDos {
+            list-style: none;
         }
-        
-    &__linkDos {
-        display: block;
-        padding: 15px;
-        color: white;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-decoration: none;
-
-        &:hover {
-            color: black;
-        }
-
+        &__linkDos {
+            display: block;
+            padding: 15px;
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-decoration: none;
+            &__linkDos:hover {
+                color: black;
+            }
         }
     }
-
-
-.header-nav__menu li:hover .header-nav__menuDos {
+    }
+    
+.menuUno li:hover .menuDos {
     display: block;
 }

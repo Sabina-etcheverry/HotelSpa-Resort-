@@ -1,28 +1,34 @@
-footer {
-    display: grid;
-}
-
-.navRedes {
-    display: grid;
+.contenedorRedes {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    list-style: none;
-    width: 1000px;
-    margin: 0px auto;
-}
-
-.redesUno li {
-    text-align: justify;
-    position: relative;
-    display: inline-block;
-}
-
-.redesUno li a {
-    display: block;
-    padding: 15px 20px;
-    color: sienna;
-    font-family: sans-serif;
-    text-decoration: none;
-}
-.redesUno li a:hover {
-    color: black;
-}
+    align-content: center;
+    margin: 0 auto;
+    .redesUno {
+        gap: 10rem;
+        
+        li {
+            text-align: justify;
+            position: relative;
+            display: inline-block;
+            
+            a {
+                display: block;
+                padding: 15px 20px;
+                text-decoration: none;
+            }
+        }
+            &__logoGmail {
+                max-width: 400px;
+                height: 50px;
+            }
+            &__logoInstagram {
+                max-width: 200px;
+                height: 50px;
+            }
+            &__logoWhatsapp {
+                max-width: 200px;
+                height: 50px;
+            }
+            }
+        }
