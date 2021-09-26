@@ -252,74 +252,88 @@ nav .menuDos__linkDos__linkDos:hover {
     height: 10%;
   }
 }
-.margen-1 {
-  margin: 10px;
+footer {
+  margin-top: 50px;
 }
 
-.margen-2 {
-  margin: 20px;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(153, 138, 125, 0.719);
 }
 
-.margen-3 {
-  margin: 30px;
+h2 {
+  font-size: 150%;
+  font-style: italic;
 }
 
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "texto1 imagen" "imagenDos texto2";
+.titulo-final {
+  font-size: 19px;
+  font-style: normal;
+  color: rgba(224, 14, 14, 0.609);
 }
 
-#texto1 {
-  grid-area: texto1;
+main {
+  margin-bottom: 50px;
 }
 
-#texto2 {
-  grid-area: texto2;
-}
-
-.contenedorHeader {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 1fr;
-}
-
-img {
-  width: 100%;
-}
-
-.row {
-  display: flex;
-  padding: 5px;
-}
-
-.column {
-  flex: 50%;
-  padding: 5px;
-}
-
-.column img {
-  margin-top: 5px;
-}
-
-.cuadroDeConsulta {
-  width: 60%;
-  height: 70%;
-  border: 2px solid;
-}
-
-.boton {
-  width: 10%;
-  justify-content: center;
+.altoImagen {
+  height: 950px;
 }
 
 .contacto {
   height: 70vh;
 }
+.contacto .formulario-titulo {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  margin-left: 50px;
+}
+.contacto .col-md-4 {
+  margin-left: 50px;
+}
+.contacto .col-md-4 .cuadroDeConsulta {
+  width: 60%;
+  height: 70%;
+  border: 2px solid;
+}
+.contacto .col-12 {
+  margin-left: 50px;
+}
+.contacto .col-12 .boton {
+  width: 10%;
+  justify-content: center;
+}
 
-.altoImagen {
-  height: 950px;
+.contenedorUno {
+  display: flex;
+  flex-direction: row;
+}
+.contenedorUno #texto1 {
+  font-weight: 200%;
+  max-width: 50%;
+  padding: 10px;
+  font-size: 150%;
+  margin: 25px;
+}
+.contenedorUno #imagenHotel {
+  width: 95%;
+}
+
+.contenedorDos {
+  display: flex;
+  flex-direction: row;
+}
+.contenedorDos #imagenHotelDos {
+  width: 95%;
+  margin: 50px;
+}
+.contenedorDos #texto2 {
+  font-weight: 200%;
+  max-width: 50%;
+  padding: 10px;
+  font-size: 150%;
+  margin: 25px;
 }
 
 /*# sourceMappingURL=index.css.map */
