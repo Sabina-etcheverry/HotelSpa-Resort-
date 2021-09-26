@@ -1,0 +1,24 @@
+.contacto {
+    height: 70vh;
+    .formulario-titulo {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-size: 40px;
+        margin-left: 50px; 
+    }
+    .col-md-4 {
+        margin-left: 50px;
+        .cuadroDeConsulta {
+            width: 60%;
+            height: 70%;
+            border: 2px solid;
+        }
+    }
+    .col-12 {
+        margin-left: 50px;
+        .boton {
+            width: 10%;
+            justify-content: center;
+        }
+    }
+}
