@@ -1,7 +1,6 @@
 {
   "name": "clase_11_sabina_desafio_obligatorio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,8 +9,17 @@
   },
   "author": "",
   "license": "ISC",
-
   "devDependencies": {
     "nodemon": "^2.0.12"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sabina-etcheverry/clase_github_sabina.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sabina-etcheverry/clase_github_sabina/issues"
+  },
+  "homepage": "https://github.com/Sabina-etcheverry/clase_github_sabina#readme",
+  "description": ""
 }

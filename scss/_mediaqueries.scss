@@ -3,22 +3,22 @@
     nav {
         .divUno {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             .titulo {
                 display: none; 
             }
             img {
-                max-width: 70%;
+                max-width: 50%;
             }
         }
          .divDos {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             max-width: 100%;
         }
          .menuUno {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             gap: 2em;
             justify-content: left;
             align-content: flex-end;
@@ -66,6 +66,12 @@
     .contacto {
         margin-right: 20%;
     }
+.redesUno {
+margin-top: 59%;
+}
+.col-12 {
+    gap: 20px;
+}
 }
     
     

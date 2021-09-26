@@ -99,7 +99,7 @@ nav .menuDos__linkDos {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-decoration: none;
 }
-nav .menuDos__linkDos__linkDos:hover {
+nav .menuDos__linkDos:hover {
   color: black;
 }
 
@@ -110,22 +110,22 @@ nav .menuDos__linkDos__linkDos:hover {
 @media screen and (max-width: 600px) {
   nav .divUno {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   nav .divUno .titulo {
     display: none;
   }
   nav .divUno img {
-    max-width: 70%;
+    max-width: 50%;
   }
   nav .divDos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 100%;
   }
   nav .menuUno {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 2em;
     justify-content: left;
     align-content: flex-end;
@@ -172,6 +172,14 @@ nav .menuDos__linkDos__linkDos:hover {
 
   .contacto {
     margin-right: 20%;
+  }
+
+  .redesUno {
+    margin-top: 59%;
+  }
+
+  .col-12 {
+    gap: 20px;
   }
 }
 @media screen and (max-width: 320px) {
