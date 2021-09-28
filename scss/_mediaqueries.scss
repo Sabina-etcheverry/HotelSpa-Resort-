@@ -88,12 +88,12 @@ margin-top: 59%;
         .divDos {
             display: flex;
             flex-direction: column;
-        }
         .menuUno {
             display: flex;
             flex-direction: column;
         }
     }
+}
     main {
         .contenedorUno {
             display: flex;
@@ -132,27 +132,29 @@ margin-top: 59%;
         display: flex;
         flex-direction: column;
         margin-left: 75px;
-    }
-    .redesUno {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 2em;
+        .contenedorRedes {
+            .redesUno {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 2em;
+                .logoGmail {
+                    max-width: 200px;
+                    height: 40px;
+                }
+                
+                .logoInstagram {
+                    max-width: 20%;
+                    height: 10%;
+                }
+                
+                .logoWhatsapp {
+                    max-width: 20%;
+                    height: 10%;
+                }
+            }
+        }
     }
     
-    .logoGmail {
-        max-width: 200px;
-        height: 40px;
-    }
-    
-    .logoInstagram {
-        max-width: 20%;
-        height: 10%;
-    }
-    
-    .logoWhatsapp {
-        max-width: 20%;
-        height: 10%;
-    }
 } 
     

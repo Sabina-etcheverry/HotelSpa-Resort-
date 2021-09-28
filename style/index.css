@@ -194,7 +194,7 @@ nav .menuDos__linkDos:hover {
     display: flex;
     flex-direction: column;
   }
-  nav .menuUno {
+  nav .divDos .menuUno {
     display: flex;
     flex-direction: column;
   }
@@ -237,25 +237,21 @@ nav .menuDos__linkDos:hover {
     flex-direction: column;
     margin-left: 75px;
   }
-
-  .redesUno {
+  footer .contenedorRedes .redesUno {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2em;
   }
-
-  .logoGmail {
+  footer .contenedorRedes .redesUno .logoGmail {
     max-width: 200px;
     height: 40px;
   }
-
-  .logoInstagram {
+  footer .contenedorRedes .redesUno .logoInstagram {
     max-width: 20%;
     height: 10%;
   }
-
-  .logoWhatsapp {
+  footer .contenedorRedes .redesUno .logoWhatsapp {
     max-width: 20%;
     height: 10%;
   }
