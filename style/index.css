@@ -235,6 +235,9 @@ nav .menuDos__linkDos:hover {
     margin: 10px;
   }
 
+  footer {
+    margin-top: 200px;
+  }
   footer nav {
     display: flex;
     flex-direction: row;
