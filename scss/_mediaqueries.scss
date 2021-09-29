@@ -15,13 +15,13 @@
             display: flex;
             flex-direction: column;
             max-width: 100%;
-        }
-         .menuUno {
-            display: flex;
-            flex-direction: column;
-            gap: 2em;
-            justify-content: left;
-            align-content: flex-end;
+            .menuUno {
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+                justify-content: left;
+                align-content: flex-end;
+            }
         }
     } 
     main {
@@ -59,18 +59,21 @@
             }
         }
     }
-    .carousel-item {
+    .carousel-inner {
         max-width: 100%;
-        height: 50%; 
+        max-height: 30%; 
     }
     .contacto {
-        margin-right: 20%;
+        margin-right: 30%;
+        .col {
+            width: 200%;
+            margin-left: 55px;
+        }  
     }
-.redesUno {
-margin-top: 59%;
-}
-.col-12 {
-    gap: 20px;
+    footer {
+    .redesUno {
+        margin-top: 59%;
+        }
 }
 }
     
@@ -129,32 +132,54 @@ margin-top: 59%;
         }
     }
     footer {
-        display: flex;
-        flex-direction: column;
-        margin-left: 75px;
+        nav {
+            display: flex;
+            flex-direction: row;
+        }
+        
         .contenedorRedes {
+            display: flex;
+            flex-direction: row;
             .redesUno {
                 display: flex;
                 flex-direction: row;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 gap: 2em;
-                .logoGmail {
-                    max-width: 200px;
-                    height: 40px;
+                &__logoGmail {
+                    max-width: 100%;
+                    height: 60px;
+                    margin-top: 70px;
                 }
-                
-                .logoInstagram {
-                    max-width: 20%;
-                    height: 10%;
+                &__logoInstagram {
+                    max-width: 80%;
+                    height: 60px;
+                    margin-top: 70px;
                 }
-                
-                .logoWhatsapp {
-                    max-width: 20%;
-                    height: 10%;
+                &__logoWhatsapp {
+                    max-width: 80%;
+                    height: 60px;
+                    margin-top: 70px;
                 }
             }
         }
+    }    
+    
+    .carousel-item {
+        max-width: 100%;
     }
-    
-} 
-    
+    .contacto {
+        margin-right: 20px;
+        .col-md-4 {
+            margin-left: 80px;
+        }
+            .col {
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+                margin-left: 55px;
+                margin-top: 40px;
+                margin-bottom: 25px;
+                gap: 15px;
+            }  
+        }
+    }
