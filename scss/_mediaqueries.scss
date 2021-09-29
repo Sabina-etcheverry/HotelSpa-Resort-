@@ -60,8 +60,10 @@
         }
     }
     .carousel-inner {
-        max-width: 100%;
-        max-height: 30%; 
+        height: 40vh;
+        .carousel-item {
+        height: 40vh;
+        } 
     }
     .contacto {
         margin-right: 30%;
@@ -163,9 +165,11 @@
             }
         }
     }    
-    
-    .carousel-item {
-        max-width: 100%;
+    .carousel-inner {
+        height: 30vh;
+        .carousel-item {
+        height: 30vh;
+        } 
     }
     .contacto {
         margin-right: 20px;
