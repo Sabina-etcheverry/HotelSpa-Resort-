@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+}
+
+.error-mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+ .mensaje-contenedor {
+     text-align: center;
+     h1 {
+         font-size: 30px;
+     }
+     h2 {
+         font-size: 30px;
+         color: black;
+     }
+     .logoTierra {
+        max-width: 70px;
+    }
+ }
+
+ 
